@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Creates a preformatted code block. Takes code language as input and adds
 # everything piped in to the block.

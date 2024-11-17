@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Provides a dynamic year-based version text. Version automatically goes to
 # a param named version. So as a bare minimum, pipe in #version. Altenratively,

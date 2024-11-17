@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Reads a file and pipes its contents out without processing.
 class FileReader

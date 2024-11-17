@@ -1,6 +1,6 @@
 # Copyright 2023, Tommi Venemies
 # Licensed under the BSD-4-Clause.
-require_relative 'include/iniparser.rb'
+require(File.expand_path('include/iniparser.rb', File.dirname(__FILE__)))
 
 # Loads all pipes defined in pipes.ini from the configured pipes directory.
 # This allows using |pipename in the .she files to load and pipe contents to

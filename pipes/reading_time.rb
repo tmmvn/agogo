@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Provides a time label for reading time based on word count of content piped
 # in. Outputs the time to #readingtime

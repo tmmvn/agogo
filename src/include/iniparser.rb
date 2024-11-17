@@ -1,7 +1,7 @@
 # Copyright 2023, Tommi Venemies
 # Licensed under the BSD-4-Clause.
-require_relative 'inifile.rb'
-require_relative 'inierror.rb'
+require(File.expand_path('inifile.rb', File.dirname(__FILE__)))
+require(File.expand_path('inierror.rb', File.dirname(__FILE__)))
 
 class IniParser
 	def initialize(ro = {})

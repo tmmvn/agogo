@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Creates a heading. Takes the header level as input and puts everything piped
 # in inside the block.

@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Creates an external link to the input link. Adds an adjoining icon as indicator.
 class ExternalLink

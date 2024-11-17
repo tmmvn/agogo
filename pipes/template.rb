@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Provides support for protypo (.prot) templates.
 # Protypo files should be basic HTML files of reusable

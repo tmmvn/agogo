@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Provides a dynamic year-based copyright. The copyright automatically goes to
 # a param copyright. So as a bare minimum, pipe in #copyright. Alternatively,

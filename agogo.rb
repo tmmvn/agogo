@@ -2,10 +2,10 @@
 # Copyright 2023, Tommi Venemies
 # Licensed under the BSD-4-Clause.
 
-require_relative 'src/envdata.rb'
-require_relative 'src/globaldata.rb'
-require_relative 'src/pipes.rb'
-require_relative 'src/processor.rb'
+require(File.expand_path('src/envdata.rb', File.dirname(__FILE__)))
+require(File.expand_path('src/globaldata.rb', File.dirname(__FILE__)))
+require(File.expand_path('src/pipes.rb', File.dirname(__FILE__)))
+require(File.expand_path('src/processor.rb', File.dirname(__FILE__)))
 
 # Agogo is a file processor that walks a source directory and processes or
 # copies files to a target dir. The app makes some assumptions. You
@@ -21,7 +21,6 @@ class Agogo
 	end
 end
 
-if __FILE__ == $0
-	app = Agogo.new
-	app.process
-end
+app = Agogo.new
+app.process
+

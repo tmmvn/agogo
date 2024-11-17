@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Creates a paragraph block. Everything piped in goes to the paragraph.
 class Paragraph

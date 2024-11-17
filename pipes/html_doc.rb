@@ -1,4 +1,4 @@
-require_relative 'pipe.rb'
+require(File.expand_path('pipe.rb', File.dirname(__FILE__)))
 
 # Creates a HTML doc. Should be your starting pipe most of the time.
 class HtmlDoc

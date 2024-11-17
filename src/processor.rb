@@ -1,7 +1,7 @@
 # Copyright 2023, Tommi Venemies
 # Licensed under the BSD-4-Clause.
-require_relative 'pipes.rb'
-require_relative 'globaldata.rb'
+require(File.expand_path('pipes.rb', File.dirname(__FILE__)))
+require(File.expand_path('globaldata.rb', File.dirname(__FILE__)))
 
 # Parses .she (Shedio) files. These act as plans for the pipe
 # system.
